@@ -1,3 +1,4 @@
+//task 1
 const number=12;
 const name=`js`;
 const iscloudy=true;
