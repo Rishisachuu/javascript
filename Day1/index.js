@@ -33,3 +33,34 @@ document.write(a*b);
 console.log(a/b);
 document.write(a/b);
 
+//task 4
+// Simple Calculator Program
+
+// Getting user input (convert prompt input to numbers)
+var number1 = Number(prompt("Enter the first number:"));
+var number2 = Number(prompt("Enter the second number:"));
+
+// Constants for operation names
+const ADD = 'Addition';
+const SUBTRACT = 'Subtraction';
+const MULTIPLY = 'Multiplication';
+const DIVIDE = 'Division';
+const MODULUS = 'Modulus';
+
+// Perform arithmetic operations
+let addition = number1 + number2;
+let subtraction = number1 - number2;
+let multiplication = number1 * number2;
+
+// Conditional operator to check division by zero
+let division = number2 !== 0 ? (number1 / number2) : 'Error: Division by zero';
+let modulus = number2 !== 0 ? (number1 % number2) : 'Error: Modulus by zero';
+
+// Display results
+console.log(`--- Calculator Results ---`);
+console.log(`${ADD}: ${number1} + ${number2} = ${addition}`);
+console.log(`${SUBTRACT}: ${number1} - ${number2} = ${subtraction}`);
+console.log(`${MULTIPLY}: ${number1} * ${number2} = ${multiplication}`);
+console.log(`${DIVIDE}: ${division}`);
+console.log(`${MODULUS}: ${modulus}`);
+console.log(`--------------------------`);
