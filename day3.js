@@ -59,3 +59,22 @@ Interval();
 
 //arbitary function
 //any value without restriction,but commonly used in explanation, documentation and coding contexts
+//in arguments:       
+function logArgs() {
+          for (let i = 0; i < arguments.length; i++) {
+            console.log(arguments[i]);
+          }
+        }
+
+        logArgs('hello', 'world', 123);
+//in rest parameter:
+        function sumAll(...numbers) {
+          let total = 0;
+          for (const num of numbers) {
+            total += num;
+          }
+          return total;
+        }
+
+        console.log(sumAll(1, 2, 3)); // 6
+        console.log(sumAll(10, 20, 30, 40, 50)); // 150
