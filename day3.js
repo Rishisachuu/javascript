@@ -1,9 +1,12 @@
+//global scope
 //let globalVar="I am global";
 //function Say(){
 //    console.log(globalVar);
 //}
 //Say();
 //console.log(globalVar)
+
+
 //function scope
 //this scope means that the variables are only accessible
 //in the function in which they are declared.
@@ -13,6 +16,8 @@
 //    console.log("within the func:"+name);
 //}
 //Say()
+
+
 //block scope
 //the block scope of a variable means that the variable is accessible
 //within the block that is between the curly braces
@@ -27,6 +32,7 @@
 //    console.log(iscloudy);
 //}
 //Voting(18)
+
 //local scope (same as function or block scope depending on context)
 //callback function
 //A callback function in JavaScript is a function passed as an argument to another function,
@@ -50,3 +56,6 @@ let Interval=()=>{
     }
 }
 Interval();
+
+//arbitary function
+//any value without restriction,but commonly used in explanation, documentation and coding contexts
