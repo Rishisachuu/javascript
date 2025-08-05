@@ -2,7 +2,7 @@
 let products = [
   { id: 1, name: "Laptop", price: 1000, quality: 2 },
   { id: 2, name: "Phone", price: 500, quality: 0 },
-  { id: 3, name: "Headphones", price: 150, quality: 3 },
+  { id: 3, name: "Headphones", price: 150, quality: 3 }
   { id: 4, name: "Monitor", price: 300, quality: 1 }
 ];
 
