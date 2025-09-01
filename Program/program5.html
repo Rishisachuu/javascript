@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>live word and character counter</h2>
+    <textarea id="maintext" placeholder="start your text here...."></textarea>
+    <div class="counter"> 
+        Characters:<span id="mainCharCount">0</span><br>
+        Words:<span id="mainWordCount">0</span>
+    </div>
+    <script>
+        document.getElementById("mainText").addEventListener("input",
+        function(){
+            const text=this.value;
+            document.getElementById("mainCharCount").innerText=text.length;
+            const trimmed= text.trim();
+            
+        }
+    </script>
+</body> 
+</html>
