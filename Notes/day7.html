@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit=" return ValidateForm">
+        <label for="phone">Mobile Number</label>
+        <input type="text" name="phone" id="phone">
+        <div class="error" id="numError"></div>
+        <button type="submit">summit</button>
+    </form>
+    <script>
+        function validatenum(phone){
+            const regex=/^[0-9]{10}$/
+            if(phone.trim()=== ""){
+                return "textarea can't be empty"
+            }
+            if(!regex.test(phone)){
+                return "mobile number must contain 10 digits"
+            }
+            return "mobile num is valid"
+        }
+        function ValidateForm(){
+            let phone=document.getElementById("phone").value;
+            let phoneError=ValidateNum(phone);
+            if(phoneError === "Mobile num is valid"){
+            return true;
+            }
+            document getElementById("phoneError").innertext=phoneError
+        }
+    </script>
+</body>
+</html>
