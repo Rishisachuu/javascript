@@ -46,3 +46,11 @@ class Addition{
     }
 }
 console.log(Addition.Math(4,4));
+
+//import and export modules
+//definition
+//Export allows you to make variables,function or classes available to other files
+
+//Import allow you to bring those into another file
+
+//used in modular javascript
