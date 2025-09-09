@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="clock">Loading...</div>
+    <script>
+        function Digitalclock(){
+        let now=new Date();
+        console.log(now);
+        let hours=now.getHours();
+        console.log(hours);
+        let minutes=now.getMinutes();
+        console.log(minutes);
+        let seconds=now.getSeconds()
+        console.log(seconds);
+        let day=now.getDay();
+        console.log(day);
+        let year=now.getFullYear();
+        console.log(year);
+        let local=now.toString();
+        console.log(local);
+
+        const ampm=hours>=12 ? 'pm':'am'
+        console.log(ampm);
+
+        hours = hours % 12;
+        hours = hours ? hours : 12;
+
+        const hh=String(hours).padStart(2,'0');
+        const mm=String(minutes).padStart(2,'0');
+        const ss=String(seconds).padStart(2,'0');
+
+        const timeString=`${hh}:${mm}:${ss}:${ampm}`;
+        document.getElementById("clock").textContent=timeString;
+
+        }
+        Digitalclock();
+        setInterval(Digitalclock,1000);
+    </script>
+</body>
+</html>
