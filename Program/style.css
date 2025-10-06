@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+}
+.carousel{
+    height: 100vh;
+    width: 100vw;
+}
+.carousel img{
+    position: absolute;
+    height: inherit;
+    width: inherit;
+}
+.but{
+    position: absolute;
+    top: 50%;
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+}
